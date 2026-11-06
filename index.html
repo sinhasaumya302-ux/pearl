@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PEARLORA | Jewellery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #fffaf5;
+            font-family: Georgia, serif;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            background-color: #f8e5e5;
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            color: #9b5d65;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: #754c51;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #c98791;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            background: linear-gradient(120deg, #f8e8e3, #fceff0);
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #8b5058;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #754c51;
+        }
+
+        .btn-pink {
+            background-color: #c98791;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-pink:hover {
+            background-color: #a96370;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* SECTION HEADING */
+
+        .section-title {
+            color: #965c65;
+            text-align: center;
+            margin: 50px 0 35px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /* PRODUCT CARDS */
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(150, 92, 101, 0.15);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 18px 30px rgba(150, 92, 101, 0.3);
+        }
+
+        .product-card img {
+            height: 230px;
+            width: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .card-body {
+            padding: 22px;
+        }
+
+        .card-title {
+            color: #965c65;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #b36b78;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* ABOUT SECTION */
+
+        .about {
+            background-color: #f9eaea;
+            padding: 45px 25px;
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        /* SPECIAL SECTION */
+
+        .special {
+            background-color: #f8e5e5;
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            padding: 35px;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #a96370;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #f8e5e5;
+            color: #754c51;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 768px) {
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">PEARLORA</a>
+
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#collection">Collection</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#special">Special</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HOME SECTION -->
+
+<section class="hero" id="home">
+
+    <h1>PEARLORA</h1>
+
+    <p><i>Elegance in Every Detail.</i></p>
+
+    <p>
+        Discover beautiful jewellery made to make
+        every moment special.
+    </p>
+
+    <a href="#collection" class="btn btn-pink mt-3">
+        Explore Collection
+    </a>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="container my-5" id="about">
+
+    <h2 class="section-title">About Pearlora</h2>
+
+    <div class="about text-center">
+
+        <p>
+            Welcome to PEARLORA, where beauty meets elegance.
+
+            We believe that jewellery is more than just an accessory.
+            It is a way to express your personality and style.
+
+            Our collection includes beautiful earrings, necklaces,
+            rings and bracelets designed for every occasion.
+
+            Whether you are getting ready for a party, a wedding
+            or a simple day out, Pearlora has something special
+            for you.
+
+            Our aim is to make every moment beautiful with
+            simple and elegant jewellery.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTION SECTION -->
+
+<section class="container my-5" id="collection">
+
+    <h2 class="section-title">Our Jewellery Collection</h2>
+
+    <p class="text-center mb-5">
+        Explore our beautiful and affordable jewellery collection.
+    </p>
+
+    <div class="row g-4">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500"
+                class="card-img-top" alt="Earrings">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Elegant Earrings</h5>
+
+                    <p class="description">
+                        Beautiful and stylish earrings perfect for
+                        parties, family functions and everyday wear.
+                        These earrings add a graceful touch to your look.
+                    </p>
+
+                    <p class="price">₹799</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500"
+                class="card-img-top" alt="Necklace">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Pearl Necklace</h5>
+
+                    <p class="description">
+                        A classy necklace designed to give you
+                        a simple and elegant appearance.
+                        Perfect for special occasions and celebrations.
+                    </p>
+
+                    <p class="price">₹1,499</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500"
+                class="card-img-top" alt="Ring">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Classic Ring</h5>
+
+                    <p class="description">
+                        A simple and beautiful ring that makes
+                        your hands look stylish.
+                        A lovely choice for gifting and daily wear.
+                    </p>
+
+                    <p class="price">₹999</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChvgfD3geCY6SKxWue1sEOqeFT_XQeL_VgRecik2kcg&s=10"width=500
+                class="card-img-top" alt="Bracelet">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Golden Bracelet</h5>
+
+                    <p class="description">
+                        A delicate bracelet with a beautiful golden
+                        finish. Perfect to wear with both traditional
+                        and western outfits.
+                    </p>
+
+                    <p class="price">₹999</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500"
+                class="card-img-top" alt="Fashion Jewellery">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Designer Jewellery</h5>
+
+                    <p class="description">
+                        Stylish designer jewellery made for people
+                        who love unique accessories.
+                        A perfect addition to your jewellery collection.
+                    </p>
+
+                    <p class="price">₹1,899</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="col-md-4">
+
+            <div class="card product-card">
+
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=500"
+                class="card-img-top" alt="Gold Jewellery">
+
+                <div class="card-body text-center">
+
+                    <h5 class="card-title">Rose Gold Collection</h5>
+
+                    <p class="description">
+                        A beautiful rose-gold style accessory
+                        that adds a soft and modern touch.
+                        Perfect for gifting and special occasions.
+                    </p>
+
+                    <p class="price">₹1,299</p>
+
+                    <button class="btn btn-pink">Explore</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SPECIAL SECTION -->
+
+<section class="container my-5" id="special">
+
+    <div class="special">
+
+        <h2 style="color:#965c65;">
+            Special Collection
+        </h2>
+
+        <p>
+            Make every occasion special with Pearlora Jewellery.
+
+            Discover elegant designs, beautiful details
+            and affordable styles.
+        </p>
+
+        <a href="#collection" class="btn btn-pink">
+            View Collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="container my-5" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+
+        <p>
+            Have any questions? We would love to hear from you!
+        </p>
+
+        <p>
+            📧 Email:
+            <a href="mailto:pearlora@example.com">
+                pearlora@example.com
+            </a>
+        </p>
+
+        <p>
+            📷 Instagram:
+            <a href="https://www.instagram.com/"
+            target="_blank">
+                @pearlora_jewels
+            </a>
+        </p>
+
+        <p>
+            📍 Location: India
+        </p>
+
+        <a href="mailto:pearlora@example.com"
+        class="btn btn-pink">
+            Contact Pearlora
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h4>PEARLORA</h4>
+
+    <p>Elegance in Every Detail.</p>
+
+    <p>
+        © 2026 PEARLORA Jewellery.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
